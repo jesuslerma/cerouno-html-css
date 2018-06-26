@@ -5,7 +5,7 @@ Una introducción pragmática a HTML y CSS. Este curso está diseñado para los 
 El curso está dividido en las siguientes secciones:
 
 0. Prework. En internet se puede encontrar mucha información teórica sobre qué es HTML y qué es CSS. Usando como base el principio `Don't Repeat Yourself` no pretendemos tratar de definir con nuestras propias palabras qué es HTML y CSS. La definición puedes encontrarla tu mismo/a y discutir en clase con tus propias palabras: ¿Qué es y para qué sirven HTML & CSS?
-1. Lenguajes de Marcado Parte 0
+1. [Lenguajes de Marcado Parte 0](#lenguajes-de-marcado-parte-0)
     1. HTML.
         1. p, b, a y h3.
         2. Cancionero 0.1.0
@@ -94,14 +94,14 @@ touch cancionero.html
         <h2>Canción: Every You Every Me</h2>
         <p>
             Sucker love is heaven sent
-            You pucker up our passion's spent
+            You pucker up our passion's spent <br>
             My hearts a tart your body's rent
             My body's broken yours is bent
         </p>
 
         <p>
             Carve your name into my arm
-            Instead of stressed I lie here charmed
+            Instead of stressed I lie here charmed <br>
             Cause there's nothing else to do
             Every me and every you
         </p>
@@ -201,6 +201,8 @@ Seguiremos trabajando con el elemento `<a>`:
 3. Cada parrafo debe tener un tamaño de font diferente.
 
 #### Style
+Hasta ahorita hemos utilizado CSS dentro del atributo *style* de cada uno de nuestros `tags`, a esta forma de declarar el estilo se le denomina *inline* y aunque es la forma más sencilla de utilizar css tambien es la menos mantenible (o más cochina).
+
 El código CSS añadido a cada selector puede separarse en un `tag` HTML llamado `<style>`. Por ejemplo si queremos cambiar el color del body agregamos lo siguiente dentro de la etiqueta `<head>`:
 ```html
 <head>
@@ -215,7 +217,44 @@ El código CSS añadido a cada selector puede separarse en un `tag` HTML llamado
 Ahora nos damos cuenta que las letras no se ven ¿cómo podemos solucionar el problema para que se vean las letras?
 
 #### Cancionero 0.4.0
-#### Archivos externos
-#### Cancionero 0.5.0
 
-### Mark Down
+1. Modifica el códgio del cancionero para que los estilos se definan dentro de la etiqueta `<style>`
+
+#### Archivos externos
+
+El `tag` `<link>` se utiliza para poder enlazar archivos externos. Principalmente lo usamos para poder enlazar documentos CSS o *Javascript* a nuestro documento HTML. 
+
+#### Cancionero 0.5.0
+1. Copia todo lo que pusiste dentro de la etiqueta `<style>` y pegalo en un archivo con extensión css. El archivo debe llamarse: `style.css`
+```css
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    text-align: left;
+    text-indent: 15px;
+}
+
+h1 {
+    color: blue;
+    text-transform: uppercase;
+}
+
+a:hover {
+  color: yellow;
+}
+
+```
+2. Enlaza el documento CSS a nuestro documento HTML.
+```html
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+```
+3. Modifica el estilo de tu cancionero ;)
+
+### Markdown
+
+Mark Down es otro tipo de lenguajes de marcado. No es necesario para hacer páginas web pero se ha convertido en uno de los más utilizados para escribir en internet. Puedes ver el siguiente enlace con una lista de comandos básicos: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) que puedes práciticar en este sitio web: http://markdownlivepreview.com/. Te reto a que escribas tu canción favorita en Markdown ;)
