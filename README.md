@@ -17,21 +17,15 @@ El curso está dividido en las siguientes secciones:
         5. External files
         6. Cancionero 0.4.0
     3. [Markdown](#markdown).
-2. Lenguajes de Marcado Parte 1
-    1. Utilizamos CSS existente
-        1. Compañeros a Colegas.
-    2. Listas
-        1. Tu primer lista
-        2. Cancionero 0.6.0
-    3. Tablas
-        1. Tu primer tabla
-        2. Cancionero 0.5.0
-        3. Estilo en tablas
-        4. Cancionero 0.6.0
-    4. Divs
-        1. Tus primeros divs
-        2. Propiedades comunes de los divs.
-        3. Cancionero 0.7.0      
+2. [Lenguajes de Marcado Parte 1](#lenguajes-de-marcado-parte-1)
+    1. [Compañeros a Colegas](#compa%C3%B1eros-a-colegas).
+    2. [Listas](#listas)
+    3. [Tablas](#tablas)
+    4. [Divs](#divs)
+        1. [Divs con estilo](#divs-con-estilo)
+            1. [Ids](#ids)
+            2. [Classes](#classes)
+    6. Cancionero 0.6.0
 3. Lenguajes de Marcado Parte 2
     1. HTML5
     2. CSS3
@@ -419,3 +413,8 @@ Las *classes* nos sirven para poder identificar un conjunto de elementos dentro 
   </p>
 </div>
 ```
+### Cancionero 0.6.0
+Ahora que ya lo sabes todo, rediseña tu cancionero para que:
+1. Contenga una lista de 5 canciones. La lista puede ser construída con cualquier de los siguientes `tags`: `<ul>`, `<table>` o `<div>`.
+2. Contenga una pagina por canción.
+3. Que cada cancion en la lista de canciones sea un enlace a una pagina de canción.
