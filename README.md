@@ -258,3 +258,82 @@ a:hover {
 ### Markdown
 
 Mark Down es otro tipo de lenguajes de marcado. No es necesario para hacer páginas web pero se ha convertido en uno de los más utilizados para escribir en internet. Puedes ver el siguiente enlace con una lista de comandos básicos: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) que puedes práciticar en este sitio web: http://markdownlivepreview.com/. Te reto a que escribas tu canción favorita en Markdown ;)
+
+## Lenguajes de Marcado Parte 1
+Ahora que sabemos lo básico de HTML y CSS vamos a continuar aprendiendo nuevos `tags` de HTML y propiedades CSS.
+
+### Compañeros a colegas
+
+Como vimos en el capítulo pasado, podemos usar un archivo CSS para que nuestro HTML se vea bonito <3. Pide a tu compañero que te comparta su archivo `style.css` para que lo uses en tu proyecto Cancionero.
+
+### Listas
+
+Ahora vamos a utilizar el `tag` `<ul>`, tambien conocido como lista.
+
+```html
+<h1>Lista de Canciones</h2>
+<ul>
+    <li>Pure morning</li>    
+    <li>The Bitter End</li>
+</ul>
+```
+
+### Tablas
+
+Una tabla es un selectior que se usa comunmente en páginas HTML. Muchas personas lo usaban para dar un formato a la página web, sin embargo esto ha ido cambiando y ahora solo se usan para mostrar información.
+
+```html
+<table>
+    <tr>
+        <th>Canción</th>
+        <th>Album</th>
+    </tr>
+    <tr>
+        <td>Pure Morning</td>
+        <td>Without You I'm Nothing</td>
+    </tr>
+    <tr>
+        <td>The Bitter End</td>
+        <td>Sleeping with Ghosts/td>
+    </tr>
+</table>
+```
+
+## Divs
+Los `tags` `<div>` son bloques HTML que se utilizan como contenedores de otros `tags`. Por lo tanto, se usan para formar una estructura dentro de un HTML.
+
+Por ejemplo si quisieramos mostrar la lista de canciones de placebo, utilizadas anteriormente, utilizaríamos una estructura html de la siguiente forma.
+
+```html
+<html>
+    <head></head>
+    <body>
+        <div>
+            <div>
+                <h1>
+                <span>Artista:</span>
+                <a  href="https://es.wikipedia.org/wiki/Placebo_(banda)"
+                        alt="Ir a Placebo en Wikipedia"
+                        target="_blank"
+                        style="color:tomato; background-color: gray; font-family: 'Lucida Console'; font-style: italic; font-size: 40px"
+                        >
+                        Placebo
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <h2>Canción: Every You Every Me</h2>
+            </div>
+            <div>
+                <!--Aqui va la letra de la cancion--->
+            </div>
+        </div>
+    </body>
+</html>
+```
+
+`<span>` es otro `tag` de tipo bloque, solo que es considerado `inline` esto quiere decir que el contenido debería consistir de no más de una línea.
+
+De momento no se muestra un cambio visual drástico, sin embargo ya tenemos un documento mejor estructurado sobre el cuál podremos realizar manipulaciones de estilo... por el momento.
+
+
