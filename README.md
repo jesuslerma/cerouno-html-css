@@ -418,3 +418,34 @@ Ahora que ya lo sabes todo, rediseña tu cancionero para que:
 1. Contenga una lista de 5 canciones. La lista puede ser construída con cualquier de los siguientes `tags`: `<ul>`, `<table>` o `<div>`.
 2. Contenga una pagina por canción.
 3. Que cada cancion en la lista de canciones sea un enlace a una pagina de canción.
+
+## Lenguajes de Marcado Parte 2
+### HTML5
+HTML5 es la última versión estable de HTML5. Esta versión causo polémica en su tiempo por los nuevos cambios que proponía, pero hoy en día es la versión que se usa y es soportada por cualquier navegador.
+
+Para empezar a usar HTML5 simplemente modificamos el `tag` principal `html` y agregamos el nuevo `tag` `<meta>`.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+Content of the document......
+</body>
+
+</html>
+```
+HTML5 agregó `tags` nuevos como `<header>`, `<footer>`, `<article>` y `<section>`. Para entender mejor como funcionan, sigamos los siguientes enlaces:
+
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_header
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_footer
+
+### CSS3
+CSS3 es la última versión estable de CSS. Esta versión causo polémica en su tiempo por los nuevos cambios que proponía, pero hoy en día es la versión que se usa y es soportada por cualquier navegador, además de ser usado por cualquier framework moderno css.
+
+### SASS
+https://sass-lang.com/guide
+https://www.sassmeister.com/
