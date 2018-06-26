@@ -53,7 +53,7 @@ El curso está dividido en las siguientes secciones:
 8. CV Online
   
 ## Lenguajes de Marcado Parte 0
-
+### HTML
 HTML se categoriza como un lenguaje de marcado. Este tipo de lenguajes códfican un documento con etiquetas (`tags`) que contienen información adicional de la estructura del texto que contienen y su presentación. Un documento es considerado html cuando su extensión así lo indique y cuando su contenido siga la siguiente estructuctura básica:
 ```html
 <html>
@@ -67,14 +67,14 @@ A las palabras que se encuentran dentro de los siguientes sigons `<` `>` como `<
 
 Existe una gran cantidad de etiquetas disponibles para usarse en cualquier documento html. Si quieres conocerlas todas te recomiendo que leas la documentación de cada una en [w3schools](https://www.w3schools.com/Html). En este curso abarcaremos las más fundamentales explicadas a continuación.
 
-### p, b, a y h
+#### p, b, a y h
 
 Las `tags`: `<p>`, `<b>`, `<a>` y `<h>` definen los siguientes elementos:
 * Párrafos `<p>`
 * Negritas `<b>`
 * Enlaces `<a>`
 * Encabezados (`headers`) `<h>`
-### Cancionero
+#### Cancionero
 
 Para practicar con las etiquetas mencionadas vamos a crear un Cancionero.
 ¿Cuál es tu banda o artista favorito? ¿Cuál es tu canción favorita de este artista? Ya la tienes, bueno ahora sí, ¡Manos en la computadora!
@@ -90,7 +90,7 @@ touch cancionero.html
         <title>Placebo</title>
     </head>
     <body>
-        <h1>Artista: Placebo</h1>
+        <h1>Artista: <a href="https://es.wikipedia.org/wiki/Placebo_(banda)">Placebo</a></h1>
         <h2>Canción: Every You Every Me</h2>
         <p>
             Sucker love is heaven sent
@@ -139,3 +139,83 @@ touch cancionero.html
 ```
 3. Remplaza respectivamente mi artista favorito, mi canción favorita y la letra de mi canción por los tuyos.
 4. Abre el archivo en tu navegador Chrome ;)
+#### Attributos HTML
+
+Los atributos son usados para agregar información adicional a cada `tag`. Los atributos más usados son:
+* href
+* src
+* width y height
+* alt
+* style
+
+Algunos `tags` html solo hacen sentido si tienen un atributo especificado, por ejemplo el tag `<a>`:
+```html
+<a href="https://es.wikipedia.org/wiki/Placebo_(banda)">Placebo</a>
+```
+En este caso el `tag` `<a>` necesita del atributo `href` para poder redireccionar a la página en wikipedia de placebo.
+
+#### Cancionero 0.2.0
+Vamos a prácticar el con los atributos HTML. Para esto agreguemos atributos nuevos al `tag` `<a>`.
+```html
+<h1>
+    Artista:
+    <a  href="https://es.wikipedia.org/wiki/Placebo_(banda)"
+        alt="Ir a Placebo en Wikipedia"
+        target="_blank"
+        style="color:red"
+        >
+        Placebo
+    </a>
+</h1>
+```
+### CSS
+Es un lenguaje usado para descibir cómo se mostrará cada `tag` dentro de un documento HTML. Aunque también puede utilizarse para descrbir otros documentos de marcado, como XML o XHTML, CSS es usado principalmente con HTML.
+
+Una primera aproximación a CSS puede hacerse agregando o modificando el atributo style de cada elemento, así como lo hicimos en el ejercicio anterior con el atributo `<a>`:
+```html
+    <a  href="https://es.wikipedia.org/wiki/Placebo_(banda)"
+        alt="Ir a Placebo en Wikipedia"
+        target="_blank"
+        style="color:red"
+        >
+        Placebo
+    </a>
+```
+#### color, background, font
+Ahora veremos cómo modificar tres propiedades fundamentales que dan estilo a cualquier `tag` html: [color](https://www.w3schools.com/css/css_colors.asp), [background](https://www.w3schools.com/css/css_background.asp) y [font](https://www.w3schools.com/css/css_font.asp) (si quieres conocer más de cada una solo da clic).
+
+Seguiremos trabajando con el elemento `<a>`:
+```html
+    <a  href="https://es.wikipedia.org/wiki/Placebo_(banda)"
+        alt="Ir a Placebo en Wikipedia"
+        target="_blank"
+        style="color:tomato; background-color: gray; font-family: 'Lucida Console'; font-style: italic; font-size: 40px"
+        >
+        Placebo
+    </a>
+```
+#### Cancionero 0.3.0
+
+1. Modifica el cancionero para que cada parrafo tenga una imagen de fondo diferente.
+2. Agrega a cada parrafo para que la letra se distinga del fondo.
+3. Cada parrafo debe tener un tamaño de font diferente.
+
+#### Style
+El código CSS añadido a cada selector puede separarse en un `tag` HTML llamado `<style>`. Por ejemplo si queremos cambiar el color del body agregamos lo siguiente dentro de la etiqueta `<head>`:
+```html
+<head>
+    <title>Placebo</title>
+    <style>
+    body {
+        background-color: black;
+    }
+    </style>
+</head>
+```
+Ahora nos damos cuenta que las letras no se ven ¿cómo podemos solucionar el problema para que se vean las letras?
+
+#### Cancionero 0.4.0
+#### Archivos externos
+#### Cancionero 0.5.0
+
+### Mark Down
