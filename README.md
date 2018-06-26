@@ -336,4 +336,86 @@ Por ejemplo si quisieramos mostrar la lista de canciones de placebo, utilizadas 
 
 De momento no se muestra un cambio visual drástico, sin embargo ya tenemos un documento mejor estructurado sobre el cuál podremos realizar manipulaciones de estilo... por el momento.
 
+### Divs con estilo
 
+Ahora que conocemos cómo funcionan los `divs` vamos a trabajar en sus propiedades CSS para hacerlo más atractivo.
+
+```css
+div {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-color: blue;
+  border-style: solid;
+  border-width: 5px;
+}
+```
+```html
+<div>
+  <p>
+    Placebo    
+  </p>
+</div>
+<div>
+  <p>
+    Song to Say Goodbye - Meds
+  </p>
+</div>
+```
+
+¿Como podemos hacer para que cada div tenga atributos diferentes? Por ejemplo, que el tamaño de la letra del título de la canción sea diferente.
+
+#### Ids
+
+El lenguaje css está compuesto de selectores y las propiedades de cada selector. Un selector hace referencia a un elemento HTML. Por ejemplo, el siguiente selector hace referencia al tag `<div>`:
+
+```css
+div {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-color: blue;
+  border-style: solid;
+  border-width: 5px;
+}
+```
+
+Si queremos identificar un div espécifico debemos agregar el atributo `id` a cada tag que querramos identificar. Por ejemplo:
+
+```html
+<div id='artist'>
+  <p>
+    Placebo    
+  </p>
+</div
+```
+
+Una vez tengamos identificado el `tag` podemos usar su id como identificador en nuestro css:
+```css
+#artist {
+    font-size: 40px;
+}
+```
+
+#### Classes
+Las *classes* nos sirven para poder identificar un conjunto de elementos dentro de un HTML, a diferencia de los *ids* en donde solo podemos identificar uno.
+
+```css
+.lyrics {
+    font-size: 16px;
+    font-style: italic;
+}
+```
+
+```html
+<div>
+  <p class="lyrics">
+    A song to say goodbye
+  </p>
+  <p class="lyrics">
+    Lara Lara
+  </p>
+</div>
+```
