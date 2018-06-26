@@ -6,17 +6,17 @@ El curso está dividido en las siguientes secciones:
 
 0. Prework. En internet se puede encontrar mucha información teórica sobre qué es HTML y qué es CSS. Usando como base el principio `Don't Repeat Yourself` no pretendemos tratar de definir con nuestras propias palabras qué es HTML y CSS. La definición puedes encontrarla tu mismo/a y discutir en clase con tus propias palabras: ¿Qué es y para qué sirven HTML & CSS?
 1. [Lenguajes de Marcado Parte 0](#lenguajes-de-marcado-parte-0)
-    1. HTML.
+    1. [HTML](#html).
         1. p, b, a y h3.
         2. Cancionero 0.1.0
-    2. CSS. 
+    2. [CSS](#css). 
         1. color, background, font inline.
         2. Cancionero 0.2.0
         3. Style tag
         4. Cancionero 0.3.0
         5. External files
         6. Cancionero 0.4.0
-    3. Mark Down.
+    3. [Markdown](#markdown).
 2. Lenguajes de Marcado Parte 1
     1. Utilizamos CSS existente
         1. Compañeros a Colegas.
