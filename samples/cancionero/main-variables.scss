@@ -1,0 +1,50 @@
+$primary-color: #7CB8D0;
+$font-color: white;
+$black: #7CB8D0;
+$gray: #D9D9CF;
+$shadow: #050505;
+
+
+
+
+img {
+  height: 40%;
+}
+
+#header {
+  overflow: hidden;
+  background-color: $shadow;
+  padding: 0px;
+  color: #7CB8D0;
+  margin-bottom: 20px;
+}
+
+#header a {
+  color: $font-color;
+  text-shadow: none;
+}
+
+a {
+  color: black;
+  text-shadow: none;
+}
+
+#songs { 
+  display: flex;
+}
+
+.song-item {
+  flex: 50%;
+  background-color: $gray;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+.lyrics {
+  background-image: url(http://images.vogue.it/gallery/17811/Big/639abe08-c05d-4be2-ab5a-573075146b67.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  font-size: 28px;
+}
